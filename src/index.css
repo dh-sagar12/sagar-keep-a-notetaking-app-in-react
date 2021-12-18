@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.navigationBar{
+  background-color: rgb(236, 178, 16);
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  font-family: 'STIX Two Text', serif;
+
+}
+.navigationBar h1{
+    color: white;
+    padding-left: 1rem;
+  font-size: 2rem;
+    text-shadow: 2px 2px 12px black;
+    
+}
+
+.logo{
+  height: 35px;
+  width: 35px;
+}
+
+.main_note{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: 2% 20%;
+}
+.main_note form{
+  display: flex;
+  flex-direction: column;
+
+}
+.main_note input, .main_note textarea{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  resize: none;
+  font-weight: bold;
+  font-family: 'Baloo Da 2', cursive;
+
+}
+.main_note textarea{
+  font-weight:200;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+.main_note input:focus, .main_note textarea:focus{
+  outline: none;
+}
+
+.main_note textarea::-webkit-scrollbar{
+  display: none;
+}
+
+.card{
+  box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.418);
+}
+
+.buttonAdd{
+  box-shadow: 2px -2px 22px rgba(0, 0, 0, 0.418);
+  height: 3rem!important;
+  width: 3rem !important;
+  align-self: flex-end;
+  background-color: whitesmoke!important;
+  margin-top: 1rem;
+  z-index: 2;
+  top: 10px;
+}
+
+.addBtn{
+  color: rgb(236, 178, 16)!important;
+  font-size: 2rem !important;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+.note_card{
+  box-shadow: 2px -2px 22px rgba(0, 0, 0, 0.418);
+  padding: 1rem;
+  border-radius: 7px;
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+
+}
+
+.note_card h4{
+  font-family: 'Baloo Da 2', cursive;
+
+}
+.note_card p{
+  font-family: 'Gowun Dodum', sans-serif;
+
+}
+
+.deleteBtn{
+  align-self: flex-end;
+  border: none;
+  border-radius: 33rem;
+  padding: 0.4rem;
+  background-color: transparent;
+}
+
+.deleteBtn:focus{
+  outline: none;
+}
+
+.deleteIcon{
+  color: rgb(236, 178, 16)!important;
+
+}
